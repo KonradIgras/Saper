@@ -1,0 +1,13 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\mouse.o"
+".\objects\graphics.o"
+".\objects\logic.o"
+".\objects\oled.o"
+".\objects\random.o"
+".\objects\spi.o"
+".\objects\startup_mkl05z4.o"
+".\objects\system_mkl05z4.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x1FFFFC00 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\saper.map" -o .\Objects\saper.axf
